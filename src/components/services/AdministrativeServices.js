@@ -6,31 +6,31 @@ import icon3 from "../../image/box-icon-3.png"
 
 export default function AdministrativeServices() {
   return (
-    <div
-      style={{
-        marginBottom: "20px",
-        marginLeft: "12px",
-      }}
-    >
+    <div className="col-12 service-box-path">
       <h1>ADMINISTRATIVE SERVICES</h1>
-      <ServicesBox
-        path="/services/receptionist"
-        className="services-box"
-        src={icon1}
-        content="RECEPTIONIST"
-      />
-      <ServicesBox
-        path="/services/personal-assistant"
-        className="services-box"
-        src={icon2}
-        content="PERSONAL ASSISTANT"
-      />
-      <ServicesBox
-        path="/services/administrative-assistant"
-        className="services-box"
-        src={icon3}
-        content="ADMINISTRATIV ASSISTENT"
-      />
+      <div>
+        <ServicesBox
+          parentClassName="col-4"
+          path="/services/receptionist"
+          className="services-box"
+          src={icon1}
+          content="RECEPTIONIST"
+        />
+        <ServicesBox
+          parentClassName="col-4"
+          path="/services/personal-assistant"
+          className="services-box"
+          src={icon2}
+          content="PERSONAL ASSISTANT"
+        />
+        <ServicesBox
+          parentClassName="col-4"
+          path="/services/administrative-assistant"
+          className="services-box"
+          src={icon3}
+          content="ADMINISTRATIV ASSISTENT"
+        />
+      </div>
     </div>
   )
 }

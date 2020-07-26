@@ -2,7 +2,7 @@ import React from "react"
 
 function Map() {
   return (
-    <div className="map">
+    <div className="col-7 map">
       <iframe
         tabIndex="0"
         frameBorder="0"

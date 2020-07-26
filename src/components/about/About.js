@@ -1,9 +1,10 @@
 import React, {useContext} from "react"
 import AboutTeam from "./AboutTeam"
+import about from "../../image/About-Us.jpg"
 
 function About() {
   return (
-    <div className="about-us">
+    <div className="about-us row ">
       <AboutTeam
         header="OUR STORY"
         context="As administrative and financial operations are essential part of any
@@ -17,7 +18,9 @@ function About() {
             price."
         link="READ MORE"
       />
-      <div className="about-right-column"></div>
+      <div className="about-right-column">
+        <img src={about} alt="" />
+      </div>
     </div>
   )
 }

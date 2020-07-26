@@ -1,11 +1,11 @@
 import React, {useContext} from "react"
 import {MyContext} from "../../context/Context"
 
-export default function Home() {
+export default function Header() {
   const {className, setclassName} = useContext(MyContext)
 
   return (
-    <div className="start-page">
+    <div className="col-12 row start-page">
       <div id="start-page-content" className={className}>
         <h2>You do your business. </h2>
         <h2>We do the rest.</h2>

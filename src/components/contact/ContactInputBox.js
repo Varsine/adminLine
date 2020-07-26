@@ -96,45 +96,49 @@ class ContactInputBox extends React.Component {
           onSubmit={this.handlerSubmit}
           method="post"
         >
-          <Input
-            type="text"
-            inputId={this.state.inputId}
-            placeholder="Name"
-            name="name"
-            onChange={this.handlerChange}
-            fieldText={nameFiald}
-          />
-          <Input
-            type="text"
-            inputId={this.state.inputId}
-            placeholder="Email"
-            name="email"
-            onChange={this.handlerChange}
-            fieldText={emailFiald}
-          />
-          <Input
-            type="tel"
-            inputId={this.state.inputId}
-            placeholder="Phone Number"
-            name="tel"
-            onChange={this.handlerChange}
-            fieldText={telFiald}
-          />
-          <Input
-            type="text"
-            inputId={this.state.inputId}
-            placeholder="Subject"
-            name="subject"
-            onChange={this.handlerChange}
-            fieldText={subjectFiald}
-          />
-          <span>
+          <div className="row ">
+            <Input
+              type="text"
+              inputId={this.state.inputId}
+              placeholder="Name"
+              name="name"
+              onChange={this.handlerChange}
+              fieldText={nameFiald}
+            />
+            <Input
+              type="text"
+              inputId={this.state.inputId}
+              placeholder="Email"
+              name="email"
+              onChange={this.handlerChange}
+              fieldText={emailFiald}
+            />
+          </div>
+          <div className="row">
+            <Input
+              type="tel"
+              inputId={this.state.inputId}
+              placeholder="Phone Number"
+              name="tel"
+              onChange={this.handlerChange}
+              fieldText={telFiald}
+            />
+            <Input
+              type="text"
+              inputId={this.state.inputId}
+              placeholder="Subject"
+              name="subject"
+              onChange={this.handlerChange}
+              fieldText={subjectFiald}
+            />
+          </div>
+          <div className="row">
             <textarea placeholder="Message"></textarea>
-          </span>
+          </div>
           <span>
             <input
               type="submit"
-              //   onClick={() => this.setState({loding: "loding"})}
+              onClick={() => this.setState({loding: "loding"})}
               value="Send"
               className="input-box-submit"
             />

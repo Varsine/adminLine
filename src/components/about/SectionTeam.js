@@ -9,33 +9,43 @@ import Ally from "../../image/Ally.jpg"
 
 function SectionTeam() {
   return (
-    <div className="our-team">
-      <MembersBox
-        src={Monic}
-        alt={Monic}
-        name="Monic"
-        position="Operations Manager"
-      />
-      <MembersBox
-        src={Tatev}
-        alt={Tatev}
-        name="Tatev"
-        position="HR & Administration  Manager"
-      />
-      <MembersBox src={Marina} alt={Marina} name="Marina" position="CMO" />
-      <MembersBox src={Ally} alt={Ally} name="Ally" position="Receptionist " />
-      <MembersBox
-        src={Silvia}
-        alt={Silvia}
-        name="Silvia"
-        position="Accounts Receivable Clerk"
-      />
-      <MembersBox
-        src={Vardan}
-        alt={Vardan}
-        name="Vardan"
-        position="Financial assistant"
-      />
+    <div className="col-5 our-team">
+      <div className="row member-box-path">
+        <MembersBox
+          src={Monic}
+          alt={Monic}
+          name="Monic"
+          position="Operations Manager"
+        />
+
+        <MembersBox
+          src={Tatev}
+          alt={Tatev}
+          name="Tatev"
+          position="HR & Administration  Manager"
+        />
+        <MembersBox src={Marina} alt={Marina} name="Marina" position="CMO" />
+      </div>
+      <div className="row member-box-path">
+        <MembersBox
+          src={Ally}
+          alt={Ally}
+          name="Ally"
+          position="Receptionist "
+        />
+        <MembersBox
+          src={Silvia}
+          alt={Silvia}
+          name="Silvia"
+          position="Accounts Receivable Clerk"
+        />
+        <MembersBox
+          src={Vardan}
+          alt={Vardan}
+          name="Vardan"
+          position="Financial assistant"
+        />
+      </div>
     </div>
   )
 }

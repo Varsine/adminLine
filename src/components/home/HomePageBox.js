@@ -6,8 +6,9 @@ import icon3 from "../../image/home-box-3.png"
 
 export default function HomePageBox() {
   return (
-    <div>
+    <div className="home-boxes row">
       <ServicesBox
+        parentClassName="col-4"
         path="/home/your-costs"
         className="services-box-great"
         src={icon1}
@@ -15,6 +16,7 @@ export default function HomePageBox() {
         paragraf="You will not pay any employment obligations, taxes or contracts, just a fixed monthly fee."
       />
       <ServicesBox
+        parentClassName="col-4"
         path="/home/your-work"
         className="services-box-great"
         src={icon2}
@@ -22,6 +24,7 @@ export default function HomePageBox() {
         paragraf="All our employees are armed with our values and are ready to distribute the highest quality service."
       />
       <ServicesBox
+        parentClassName="col-4"
         path="/home/experience"
         className="services-box-great"
         src={icon3}

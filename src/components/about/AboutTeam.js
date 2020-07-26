@@ -10,8 +10,8 @@ function AboutTeam(props) {
       <div id="about-content" className={className}>
         <h2>{props.header}</h2>
         <p className={props.classNameParagraf}>{props.context}</p>
-        <Link className="about-link" to={"about-us"}>
-          {props.link}
+        <Link className="row about-link" to={"about-us"}>
+          <p> {props.link}</p>
         </Link>
       </div>
     </div>

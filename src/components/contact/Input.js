@@ -2,7 +2,7 @@ import React from "react"
 
 function Input(props) {
   return (
-    <div>
+    <div className="col-6 input-div">
       <span className="input-box" id={props.inputId}>
         <input
           type={props.type}

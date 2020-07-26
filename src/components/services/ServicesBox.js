@@ -3,8 +3,8 @@ import {Link} from "react-router-dom"
 
 export default function ServicesBox(props) {
   return (
-    <div>
-      <Link to={props.path}>
+    <div className={props.parentClassName}>
+      <Link to={props.path} className="service-box-link">
         <div className={props.className}>
           <img src={props.src} />
           <h3>{props.content}</h3>

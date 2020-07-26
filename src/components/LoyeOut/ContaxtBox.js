@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 export default function ContaxtBox() {
   return (
-    <div className="contact-box">
+    <div className="col-3  row contact-box">
       <div className="phone-box">
         <Link className="contact-link" to={"/phone"}>
           <i className="fa fa-phone"></i>07425173183

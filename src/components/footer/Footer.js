@@ -4,7 +4,7 @@ import Menu from "../LoyeOut/Menu"
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer-menu">
+      <div className="footer-menu row">
         <Menu />
       </div>
       <div className="copyrigth">

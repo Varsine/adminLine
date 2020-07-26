@@ -1,46 +1,28 @@
 import React from "react"
 import {Link} from "react-router-dom"
 
-function ServicesLoyeOut() {
+function ServicesLoyeOut(props) {
   return (
-    <div className="services-loyuot" style={{display: "none"}}>
-      <ul>
-        <li>
-          <Link className="nav-link">Administrative services</Link>
-          <ul>
-            <li>
-              <Link className="nav-link">Virtual Receptionist Service</Link>
-            </li>
-            <li>
-              <Link className="nav-link">Personal assistant</Link>
-            </li>
-            <li>
-              <Link className="nav-link">Administrative assistant</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link className="nav-link">Financial services</Link>
-          <ul>
-            <li>
-              <Link className="nav-link">Accounts Receivable</Link>
-            </li>
-            <li>
-              <Link className="nav-link">Accounts Payable</Link>
-            </li>
-            <li>
-              <Link className="nav-link">Credit Control</Link>
-            </li>
-
-            <li>
-              <Link className="nav-link">Financial Assistant</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link className="nav-link">Call center services</Link>
-        </li>
-      </ul>
+    <div>
+      <div className="row">
+        <Link className="nav-link" to={"/"}>
+          Administrative services{" "}
+          <span onClick={props.clickAdmin}>
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </Link>
+      </div>
+      <div className="row">
+        <Link className="nav-link" to={"/"}>
+          Financial services{" "}
+          <span onClick={props.clickFinanc}>
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </Link>
+      </div>
+      <Link className="nav-link" to={"/"}>
+        Call center services
+      </Link>
     </div>
   )
 }
