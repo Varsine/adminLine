@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React from "react"
 import AboutTeam from "./AboutTeam"
 import about from "../../image/About-Us.jpg"
 

@@ -3,7 +3,7 @@ import HomePageBox from "./HomePageBox"
 import {MyContext} from "../../context/Context"
 
 const Home = () => {
-  const {className, setclassName} = useContext(MyContext)
+  const {className} = useContext(MyContext)
 
   return (
     <div className="row home-page">

@@ -37,11 +37,13 @@ function MembersBox(props) {
       <div className="team-infobox">
         <h3>
           {context.length < 15 ? (
-            <Link className={className} id={idHover}>
+            <Link to="/" className={className} id={idHover}>
               {context}
             </Link>
           ) : (
-            <Link id="position-hover">{context}</Link>
+            <Link to="/" id="position-hover">
+              {context}
+            </Link>
           )}
         </h3>
       </div>

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import {MyContext} from "../../context/Context"
 
 function AboutTeam(props) {
-  const {className, setclassName} = useContext(MyContext)
+  const {className} = useContext(MyContext)
 
   return (
     <div className="about-content">

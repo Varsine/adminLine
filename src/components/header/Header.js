@@ -2,7 +2,7 @@ import React, {useContext} from "react"
 import {MyContext} from "../../context/Context"
 
 export default function Header() {
-  const {className, setclassName} = useContext(MyContext)
+  const {className} = useContext(MyContext)
 
   return (
     <div className="col-12 row start-page">

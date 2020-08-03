@@ -5,7 +5,7 @@ import CallServices from "./CallServices"
 import {MyContext} from "../../context/Context"
 
 function Services() {
-  const {className, setclassName} = useContext(MyContext)
+  const {className} = useContext(MyContext)
   return (
     <div className=" services row">
       <div id="services-content" className={className}>

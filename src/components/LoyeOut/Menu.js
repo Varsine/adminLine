@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react"
+import React, {useRef} from "react"
 import {Link} from "react-router-dom"
 import ServicesLoyeOut from "./ServicesLoyeOut"
 import AdministrativLoyeOut from "./AdministrativLoyeOut"
@@ -31,7 +31,6 @@ function Menu() {
     alertAdminRef.current.classList.remove("menu-alert-admin-service")
     alertFinancRef.current.classList.remove("menu-alert-financ-service")
   }
-
   return (
     <div className="row nav-div">
       <ul className="nav">

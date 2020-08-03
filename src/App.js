@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from "react"
+import React, {useState} from "react"
 import "./App.css"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Navbar from "./components/LoyeOut/Navbar"
@@ -9,7 +9,7 @@ import About from "./components/about/About"
 import OurTeam from "./components/about/OurTeam"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
-import "animate.css"
+import "./Responsive.css"
 import Header from "./components/header/Header"
 
 function App() {

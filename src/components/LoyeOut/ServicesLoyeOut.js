@@ -8,7 +8,7 @@ function ServicesLoyeOut(props) {
         <Link className="nav-link" to={"/"}>
           Administrative services{" "}
           <span onClick={props.clickAdmin}>
-            <i class="fas fa-angle-right"></i>
+            <i className="fas fa-angle-right"></i>
           </span>
         </Link>
       </div>
@@ -16,7 +16,7 @@ function ServicesLoyeOut(props) {
         <Link className="nav-link" to={"/"}>
           Financial services{" "}
           <span onClick={props.clickFinanc}>
-            <i class="fas fa-angle-right"></i>
+            <i className="fas fa-angle-right"></i>
           </span>
         </Link>
       </div>

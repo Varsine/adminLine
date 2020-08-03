@@ -61,15 +61,13 @@ class ContactInputBox extends React.Component {
   }
   handlerSubmit = (e) => {
     e.preventDefault()
-    const lodingSend = this.setState({
-      loding: "loding-send",
-    })
+
     this.validate()
     const {name, email, tel, nameFiald, emailFiald, telFiald} = this.state
     if (
-      !tel == "" &&
-      !name == "" &&
-      !email == "" &&
+      !tel === "" &&
+      !name === "" &&
+      !email === "" &&
       nameFiald === "" &&
       emailFiald === "" &&
       telFiald === ""
