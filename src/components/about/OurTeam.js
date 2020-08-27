@@ -4,8 +4,8 @@ import SectionTeam from "./SectionTeam"
 
 function OurTeam() {
   return (
-    <div className="about-us row">
-      <div className="our-about">
+    <div className="about-us row" style={{marginTop: "8%"}}>
+      <div className="our-about" style={{margin: "5% 1%"}}>
         <AboutTeam
           header="Meet Our Team"
           context="A perfect blend of knowledge, experience and passion. 

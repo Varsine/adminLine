@@ -1,76 +1,113 @@
-@media only screen and (max-width: 1540px) {
-  .nav .nav-link {
-    font-size: 20px;
-    padding: 0 15px;
+@media only screen and (max-width: 1280px) {
+  .nav-bar {
+    height: 60px !important;
   }
-  .alert-menu .nav-link {
-    font-size: 80%;
+  .nav {
+    width: 82%;
+  }
+  .menu-list {
+    margin-left: -10%;
+  }
+  .nav-link {
+    font-size: 18px !important;
+  }
+  .logo img {
+    width: 130px !important;
+    margin-left: 0%;
   }
   .menu-alert-service {
     left: 29%;
-    width: 14%;
   }
-  .menu-alert-admin-service,
+  .menu-alert-admin-service {
+    left: 47%;
+  }
+  @keyframes changeTopService {
+    from {
+      top: 110px;
+    }
+    to {
+      top: 90px;
+    }
+  }
+  @keyframes changeTop {
+    from {
+      top: 90px;
+    }
+    to {
+      top: 60px;
+    }
+  }
   .menu-alert-financ-service {
-    left: 43%;
-    width: 200px;
+    top: 90px;
+    left: 47%;
   }
   .menu-alert-about {
-    left: 37%;
-  }
-  .nav li:hover::before,
-  .alert-menu .nav-link::before {
-    width: 0 !important;
-  }
-  .footer-menu .menu-alert-admin-service,
-  .footer-menu .menu-alert-financ-service {
-    left: 54%;
-  }
-  .logo {
-    width: 15%;
-  }
-  .logo img {
-    width: 150px;
-  }
-  .contact-box {
-    width: 36%;
-  }
-  #start-page-content h2 {
-    font-size: 40px;
-  }
-  .footer-menu .nav {
-    padding-left: 0;
-  }
-  .footer-menu .nav-link {
-    font-size: 13px !important;
-    padding: 0 20px !important;
+    left: 39%;
   }
 }
 
-@media only screen and (max-width: 1165px) {
+@media only screen and (max-width: 1164px) {
+  .phone-box {
+    margin-left: 0%;
+  }
   .logo {
-    width: 29%;
+    width: 40%;
+    margin-left: 5%;
     justify-content: flex-end !important;
+  }
+
+  .contact-box {
+    width: 60%;
+    margin-left: -5px;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .mail-box {
+    margin-left: 0;
+  }
+
+  #start-page-content h3 {
+    width: 43%;
   }
   .menu-list {
     display: none !important;
   }
   .hidden-menu {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     color: white;
-    font-weight: 400;
-    font-size: 20px;
     top: 20px;
+    font-size: 20px;
     position: absolute;
-    left: 2%;
+    left: 3%;
   }
+  .nav-bottom-menu .nav {
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .nav-bottom-menu .nav-link {
+    padding: 0 24.5px;
+  }
+  .nav-bottom-menu .nav span {
+    left: 80%;
+  }
+
   .contact-box {
     width: 61%;
     justify-content: flex-start !important;
   }
-  .column-hover-move::before {
+  .column-move::before {
     height: 0;
+  }
+  .services {
+    padding: 0 !important;
+  }
+  #services-content {
+    padding: 0 4%;
+  }
+  .services-boxes {
+    margin: 0;
+    width: 100%;
   }
   .services,
   .home-page,
@@ -80,34 +117,71 @@
   #services-content {
     margin: 30px 0 !important;
   }
-
+  .home-page {
+    padding-bottom: 0 !important;
+    padding: 0;
+  }
+  #home-page-content p {
+    margin-left: 40px;
+  }
+  #home-page-content ul li {
+    margin-left: 50px;
+  }
+  .services-box-great {
+    margin: 1px 3% 15px 3%;
+  }
+  .home-boxes {
+    margin: 0 !important;
+  }
+  .home-page-boxes {
+    padding: 0;
+  }
+  .services-box-great h3 {
+    font-size: 12px;
+  }
   .nav-bottom-menu {
     display: block !important;
     background-color: #7497b1;
-    padding-right: 110%;
+    height: 60px;
   }
   .nav-bottom-menu .nav-div {
     display: flex !important;
     width: 1920px !important;
   }
   .nav-bottom-menu .menu-alert-service {
-    left: 7%;
-    top: 56px;
-    width: 200px;
+    left: 5%;
+    top: 60px;
+    width: 220px;
   }
   .nav-bottom-menu .menu-alert-admin-service,
   .nav-bottom-menu .menu-alert-financ-service {
-    left: 17.5%;
+    left: 16.4%;
     top: 56px;
-    width: 200px;
+    width: 220px;
   }
   .nav-bottom-menu .menu-alert-about {
-    left: 13%;
+    left: 11.5%;
     top: 56px;
     width: 150px;
   }
+  .nav-bottom-menu .nav-link:hover::before {
+    width: 100%;
+  }
+  .nav-bottom-menu .alert-menu .nav-link:hover::before {
+    width: 80%;
+  }
+  .start-page {
+    margin-top: 60px;
+  }
   #start-page-content {
-    padding: 10px;
+    padding: 0 10px;
+  }
+  #start-page-content h2 {
+    line-height: 20px;
+    font-size: 36px !important;
+  }
+  #start-page-content h3 {
+    margin-top: 60px !important;
   }
   #start-page-content h4 {
     margin-top: 0 !important;
@@ -127,9 +201,14 @@
   .about-content {
     padding: 1% 5%;
   }
-  .services {
-    padding: 5%;
-    margin: 0;
+  .about-paragraf + .about-link {
+    margin-bottom: 5%;
+  }
+  .about-paragraf + .about-link {
+    margin-top: 0 !important;
+  }
+  #position-hover {
+    font-size: 60% !important;
   }
   .services-boxes,
   .home-page-boxes,
@@ -146,36 +225,23 @@
     justify-content: center !important;
   }
   .input-box input {
-    width: 60%;
+    width: 84% !important;
   }
-
-  .home-page {
-    margin: 5% 0;
-    padding: 15% 5%;
-  }
-  #home-page-content ul li {
-    font-size: 50%;
-    line-height: 22px;
-  }
-  #home-page-content ul li::before {
-    position: static;
-    font-size: 60%;
-    padding-right: 5px;
-  }
-  #home-page-content ul {
-    padding-left: 0 !important;
-    margin: 2% 0 !important;
+  .input-box-form textarea {
+    width: 100%;
   }
   .service-box-path h1 {
     font-size: 100% !important;
   }
-  .about-link p {
-    font-size: 100% !important;
-  }
+
   .our-team {
     position: static;
-    width: 60%;
-    margin-left: 20%;
+    width: 56%;
+    margin-left: 22%;
+  }
+
+  .member-box-path > div {
+    margin: 10px;
   }
   .footer-menu .nav-link {
     font-size: 15px !important;
@@ -185,10 +251,16 @@
     display: none;
   }
   .input-box-submit {
-    font-size: 80% !important;
+    width: 130px !important;
   }
 }
 @media only screen and (max-width: 1040px) {
+  .nav-bar {
+    padding: 0 !important;
+  }
+  .start-page {
+    margin-top: 60px !important;
+  }
   .contact-data {
     flex-wrap: wrap;
   }
@@ -209,24 +281,102 @@
     width: 75%;
   }
 }
+@media only screen and (max-width: 1010px) {
+  .our-team {
+    position: static;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .input-box input {
+    width: 81% !important;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .services-box h3,
+  .services-box-smoll h3,
+  .services-box-great h3 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  #home-page-content ul li {
+    line-height: 23px;
+    margin-left: 50px;
+  }
+  .input-box input {
+    width: 78% !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #position-hover {
+    font-size: 10px !important;
+  }
+}
 @media only screen and (max-width: 766px) {
   .logo,
   .contact-box {
-    width: 100%;
+    width: 85%;
+    display: flex;
     justify-content: center !important;
   }
+  .input-box input {
+    width: 75% !important;
+  }
+  .nav-bar {
+    padding: 1% 0 !important;
+  }
+  .start-page {
+    padding-top: 40px;
+  }
+  #start-page-content h2 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+  #start-page-content h3 {
+    line-height: 24px;
+    margin-top: 20px !important;
+    font-size: 15px !important;
+    width: 50%;
+  }
+  #start-page-content h4 {
+    font-size: 15px !important;
+    letter-spacing: 0px;
+  }
+  #home-page-content ul li::before {
+    left: 3% !important;
+  }
+  #home-page-content ul li {
+    margin-left: 10px;
+  }
+  .contact-box {
+    font-size: 15px;
+    line-height: 8px;
+    margin-left: 4%;
+    margin-top: 0;
+  }
+  .contact-link {
+    line-height: 2px;
+  }
+  .start-page {
+    margin-top: 120px;
+  }
+
   .menu-list-blok {
     display: block !important;
     background-color: #7497b1;
   }
-  .larg-nav-bar {
-    height: 240px;
-    position: relative;
+  .nav-bar {
+    height: 116px !important;
+    padding: 0 !important;
   }
 
-  .hidden-menu {
-    height: 50px;
-    width: 50px;
+  .logo img {
+    width: 185px !important;
+    margin-left: -25%;
+  }
+
+  .larg-nav-bar {
+    height: 240px !important;
+    position: relative;
   }
 
   .menu-list-blok .nav-div {
@@ -234,60 +384,86 @@
     width: 100% !important;
   }
   .menu-list-blok .nav {
-    margin-top: -40px !important;
-    margin-left: -20px;
+    margin-top: -25px !important;
+    margin-left: -0px;
   }
   .menu-list-blok .nav-link {
     display: block;
     width: 100%;
   }
+  .menu-list-blok .nav-link:hover::before {
+    display: none;
+  }
   .larg-nav-bar .logo {
-    top: 0;
+    top: 3.6%;
     position: absolute;
+    left: 10%;
   }
-  .larg-nav-bar .hidden-menu {
-    top: 20px;
-  }
+
   .menu-list-blok .nav-div {
     margin-left: -30px;
     margin-top: 20px;
   }
   .menu-list-blok .nav {
     display: block;
-    line-height: 25px;
+    width: 100%;
     font-weight: bold;
+    margin-top: -40px !important;
   }
-
+  .menu-list-blok .nav li {
+    display: flex;
+    width: 80px;
+  }
+  .menu-list-blok .nav li .nav-link span {
+    margin-top: -8px;
+  }
   .menu-list-blok .nav-link,
   .menu-alert-service .nav-link {
-    font-size: 12px !important;
+    font-size: 15px !important;
+    line-height: 30px;
+    margin-left: 8%;
   }
+  .menu-alert-service .nav-link,
+  .menu-alert-financ-service .nav-link,
+  .menu-alert-admin-service .nav-link,
+  .menu-alert-about .nav-link {
+    margin: 0 !important;
+    line-height: 20px;
+  }
+  .menu-alert-service,
+  .menu-alert-about,
+  .menu-alert-admin-service,
+  .menu-alert-financ-service {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    clip: rect(0, 5000px, 5000px, 0);
+  }
+
   .menu-list-blok .menu-alert-service {
     position: absolute !important;
-    width: 150px !important;
+    width: 200px !important;
     justify-content: start !important;
     margin-left: 30px !important;
-    margin-top: -80px !important;
+    margin-top: -97px !important;
     animation: changeTopMobileMenu 2s alternate !important;
   }
   .menu-list-blok .menu-alert-service .nav-link {
     padding-left: 10%;
-    font-size: 10px !important;
+    font-size: 15px !important;
   }
   .menu-list-blok .menu-alert-financ-service,
   .menu-list-blok .menu-alert-admin-service {
-    position: static;
-    width: 150px;
-    margin-left: 100%;
-    margin-top: -50%;
+    position: absolute;
+    width: 200px !important;
+    left: 230px;
+    top: 22px;
     animation: changeTopMobileMenu 2s alternate !important;
   }
 
   .menu-list-blok .menu-alert-about {
     position: absolute !important;
-    width: 80px;
-    margin-left: 20px !important;
-    margin-top: -50px !important;
+    width: 100px;
+    margin-left: 40px !important;
+    margin-top: -80px !important;
     animation: changeTopMobileMenu 2s alternate !important;
   }
   @keyframes changeTopMobileMenu {
@@ -306,7 +482,7 @@
   }
   .larg-nav-bar .contact-box {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
   }
   .nav-bottom-menu {
     display: none !important;
@@ -314,16 +490,21 @@
   .nav-bar {
     flex-wrap: wrap;
   }
-  .services-boxes {
-    min-width: 100% !important;
-  }
-  .services-box h3 {
-    font-size: 14px;
-  }
+
   .home-page-boxes {
     min-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .about-content {
+    padding: 20px !important;
+    padding-bottom: 70px !important;
+  }
+  .about-content p {
+    line-height: 1.5;
+  }
+  .about-right-column {
+    display: none;
   }
   .input-box input {
     width: 55%;
@@ -335,79 +516,76 @@
     width: 100% !important;
     margin-left: 0 !important;
   }
-  #position-hover {
-    font-size: 6px !important;
-    line-height: 20px;
-  }
-  body p,
-  body h3,
-  body h4 {
-    font-size: 100% !important;
+  .member-box-path > div {
+    margin: 10px;
   }
 
-  body h2 {
-    font-size: 130% !important;
-    margin: 0 !important;
+  .member-box-path > div {
+    width: 300px !important;
   }
-  #start-page-content h2,
-  #home-page-content h2 {
-    font-size: 25px !important;
-  }
+
   .contact-header > div p {
     font-size: 70% !important;
   }
-  .services-box p,
-  .services-box-smoll p,
-  .services-box-great p,
-  .services-box h3,
-  .services-box-smoll h3,
-  .services-box-great h3 {
-    font-size: 60% !important;
-  }
-  .services-box,
-  .services-box-smoll {
-    min-height: 100px;
-  }
-  .services-box-great {
-    min-height: 330px;
+  .contact-header {
+    font-size: 32px !important;
+    line-height: 1.5;
   }
 }
-
+@media only screen and (max-width: 640px) {
+  .input-box input {
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .team-thumb {
+    width: 100%;
+    min-height: 100px;
+  }
+  .members-box {
+    min-height: 100px;
+  }
+  .member-box-path > div {
+    width: 150px !important;
+  }
+  #position-hover {
+    line-height: 12px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .input-box input {
+    width: 65% !important;
+  }
+}
 @media only screen and (max-width: 480px) {
+  .start-page {
+    margin-top: 100px !important;
+  }
   .service-box-path > div > div {
-    width: 80%;
-    margin: 2% 0 !important;
+    width: 73% !important;
+    margin: 2% 0;
   }
-  .contact-box {
-    font-size: 15px !important;
-    line-height: 15px;
-  }
-  .logo img {
-    width: 100px;
-  }
+
   .service-box-path > div {
     flex-wrap: wrap !important;
     justify-content: center !important;
   }
   .home-boxes > div {
-    width: 100%;
+    width: 73%;
   }
-  .services-box-great {
-    min-height: 200px !important;
-  }
+
   .home-boxes {
     flex-wrap: wrap;
+    justify-content: center;
   }
-  .member-box-path {
-    flex-wrap: wrap;
-  }
+
   .contact-header > div p {
     font-size: 15px !important;
     line-height: 20px;
   }
-  .input-div input,
-  .input-box-submit {
-    width: 80% !important;
+  .input-div input {
+    width: 83% !important;
+    min-width: 30%;
   }
   .input-div {
     width: 100% !important;
@@ -416,18 +594,51 @@
   .input-box-form > div {
     flex-wrap: wrap !important;
   }
+.menu-list-blok{
+margin-top: -40px;}
+  .menu-list-blok .nav-link {
+    font-size: 13px !important;
+  }
+  .menu-alert-service .nav-link {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .services-box h3,
+  .services-box-smoll h3,
+  .services-box-great h3 {
+    font-size: 14px;
+  }
+  #home-page-content ul li {
+    line-height: 38px;
+  }
+  .home-boxes > div {
+    width: 100%;
+  }
+  .services-box-great {
+    height: 230px;
+    margin: 1px 4px 15px 4px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .member-box-path {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #home-page-content ul li {
+    line-height: 23px;
+  }
+  #start-page-content h2 {
+    line-height: 28px !important;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (max-width: 370px) {
   .contact-link {
     font-size: 12px;
-    display: block;
+    line-height: 9px;
   }
-
-  .menu-list-blok .nav-link,
-  .menu-alert-service .nav-link {
-    font-size: 10px !important;
-  }
-  .menu-list-blok .menu-alert-financ-service,
-  .menu-list-blok .menu-alert-admin-service,
-  .menu-list-blok .menu-alert-service {
-    width: 100px;
+  .logo {
+    margin-left: 25% !important;
   }
 }

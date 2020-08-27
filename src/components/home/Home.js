@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className="row home-page">
-      <div id="home-page-content" className={className}>
+      <div id="home-page-content" className={className} style={{padding: "5% 2%"}}>
         <h2>WHY OUTSOURCE TO ADMINLINE</h2>
         <p>Working with us you can</p>
         <ul>

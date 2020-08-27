@@ -5,18 +5,20 @@ export default function ContaxtBox() {
   return (
     <div className="col-3  row contact-box">
       <div className="phone-box">
-        <Link className="contact-link" to={"/phone"}>
-          <i className="fa fa-phone"></i>07425173183
+        <Link className="row contact-link" to={"/phone"}>
+          <i className="fa fa-phone"></i>
+          <p>07425173183</p>
         </Link>
 
         <Link className="contact-link" to={"/phone"}>
-          <i className="fa fa-phone"></i>02034178500
+          <i className="fa fa-phone"></i>
+          <p>02034178500</p>
         </Link>
       </div>
       <div className="mail-box">
         <Link className="contact-link" to={"/mail"}>
           <i className="fa fa-envelope"></i>
-          onfo@adminline.co.uk
+          <p>info@adminline.co.uk</p>
         </Link>
       </div>
     </div>

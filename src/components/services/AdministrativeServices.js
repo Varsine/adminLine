@@ -6,7 +6,7 @@ import icon3 from "../../image/box-icon-3.png"
 
 export default function AdministrativeServices() {
   return (
-    <div className="col-12 service-box-path">
+    <div className="service-box-path">
       <h1>ADMINISTRATIVE SERVICES</h1>
       <div>
         <ServicesBox

@@ -5,13 +5,16 @@ function AdministrativLoyeOut(props) {
   return (
     <div>
       <Link className="nav-link nav-link-larg" to={"/"}>
-        Virtual Receptionist service
+        Virtual Receptionist
+        <br /> service
       </Link>
       <Link className="nav-link" to={"/"}>
         Personal assistant{" "}
       </Link>
       <Link className="nav-link nav-link-larg" to={"/"}>
-        Administrative assistant{" "}
+        Administrative
+        <br />
+        assistant
       </Link>
     </div>
   )

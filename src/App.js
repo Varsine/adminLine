@@ -13,14 +13,14 @@ import "./Responsive.css"
 import Header from "./components/header/Header"
 
 function App() {
-  const [className, setclassName] = useState("")
+  const [className, setclassName] = useState("column-move col-5")
   const scrollWindow = () => {
     if (
       (window.scrollY > 10 && window.scrollY < 300) ||
-      (window.scrollY > 600 && window.scrollY < 1000) ||
-      (window.scrollY > 1400 && window.scrollY < 1800) ||
-      (window.scrollY > 2500 && window.scrollY < 3000) ||
-      (window.scrollY > 3200 && window.scrollY < 3500)
+      (window.scrollY > 800 && window.scrollY < 1200) ||
+      (window.scrollY > 1600 && window.scrollY < 1900) ||
+      (window.scrollY > 2600 && window.scrollY < 3000) ||
+      (window.scrollY > 3400 && window.scrollY < 3800)
     ) {
       setclassName("column-hover-move col-5")
     } else {

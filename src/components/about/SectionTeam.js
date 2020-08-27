@@ -9,7 +9,7 @@ import Ally from "../../image/Ally.jpg"
 
 function SectionTeam() {
   return (
-    <div className="col-5 our-team">
+    <div className="our-team">
       <div className="row member-box-path">
         <MembersBox
           src={Monic}

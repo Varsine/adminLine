@@ -9,9 +9,9 @@ function Services() {
   return (
     <div className=" services row">
       <div id="services-content" className={className}>
-        <div>
+        <div style={{padding: "5% 2%"}}>
           <h2>
-            RECEPTIONIST, BOOKKEEPING AND <br /> CALL CENTER SERVICES
+            RECEPTIONIST, BOOKKEEPING AND CALL CENTER SERVICES
           </h2>
           <p>
             Being a business owner is not an easy task. Very often not being

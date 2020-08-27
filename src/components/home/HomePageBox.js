@@ -12,7 +12,7 @@ export default function HomePageBox() {
         path="/home/your-costs"
         className="services-box-great"
         src={icon1}
-        content="You will reduce your co"
+        content="You will reduce your costs"
         paragraf="You will not pay any employment obligations, taxes or contracts, just a fixed monthly fee."
       />
       <ServicesBox

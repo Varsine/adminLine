@@ -32,7 +32,7 @@ function Menu() {
     alertFinancRef.current.classList.remove("menu-alert-financ-service")
   }
   return (
-    <div className="row nav-div">
+    <div className="nav-div">
       <ul className="nav">
         <li>
           <Link className="nav-link" to={"/"}>
