@@ -18,6 +18,7 @@ function About() {
             Receptionist, Bookkeeping and Call Center support with extraordinary
             price."
           link="READ MORE"
+          to="/who-we-are"
         />
       </div>
       <div className="about-right-column">

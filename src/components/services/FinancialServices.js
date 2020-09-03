@@ -13,28 +13,28 @@ export default function FinancialServices() {
         {" "}
         <ServicesBox
           parentClassName="col-3"
-          path="/services/accounts-receivable"
+          path="/account-receivable"
           className="services-box-smoll"
           src={icon4}
           content="accounts receivable"
         />
         <ServicesBox
           parentClassName="col-3"
-          path="/services/accounts-payable"
+          path="/account-payable"
           className="services-box-smoll"
           src={icon5}
           content="accounts payable"
         />
         <ServicesBox
           parentClassName="col-3"
-          path="/services/credit-control"
+          path="/credit-control"
           className="services-box-smoll"
           src={icon6}
           content="credit control"
         />
         <ServicesBox
           parentClassName="col-3"
-          path="/services/financial-assistant"
+          path="/financial-assistent"
           className="services-box-smoll"
           src={icon7}
           content="financial ASSISTENT"

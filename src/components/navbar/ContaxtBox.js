@@ -1,25 +1,24 @@
 import React from "react"
-import {Link} from "react-router-dom"
 
 export default function ContaxtBox() {
   return (
     <div className="col-3  row contact-box">
       <div className="phone-box">
-        <Link className="row contact-link" to={"/phone"}>
+        <a href="tel:07425173183" className="row contact-link" to={"/phone"}>
           <i className="fa fa-phone"></i>
           <p>07425173183</p>
-        </Link>
+        </a>
 
-        <Link className="contact-link" to={"/phone"}>
+        <a href="tel:02034178500" className="contact-link" to={"/phone"}>
           <i className="fa fa-phone"></i>
           <p>02034178500</p>
-        </Link>
+        </a>
       </div>
       <div className="mail-box">
-        <Link className="contact-link" to={"/mail"}>
+        <a className="contact-link">
           <i className="fa fa-envelope"></i>
           <p>info@adminline.co.uk</p>
-        </Link>
+        </a>
       </div>
     </div>
   )

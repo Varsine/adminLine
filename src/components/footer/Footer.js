@@ -1,5 +1,5 @@
 import React from "react"
-import Menu from "../LoyeOut/Menu"
+import Menu from "../navbar/Menu"
 
 function Footer() {
   return (

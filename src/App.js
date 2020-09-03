@@ -1,52 +1,66 @@
-import React, {useState} from "react"
-import "./App.css"
+import React from "react"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import Navbar from "./components/LoyeOut/Navbar"
-import Services from "./components/services/Services"
-import {MyContext} from "./context/Context"
-import Home from "./components/home/Home"
-import About from "./components/about/About"
-import OurTeam from "./components/about/OurTeam"
-import Contact from "./components/contact/Contact"
+
+import Navbar from "./components/navbar/Navbar"
+import VirtualReceptionist from "./components/ServicesMenu/VirtualReceptionist"
+import MainPage from "./components/mainPage/MainPage"
+
+import PersonalAssistant from "./components/ServicesMenu/PersonalAssistant"
+import AdministrativeAssistant from "./components/ServicesMenu/AdministrativeAssistant"
+import AccountsReceivable from "./components/ServicesMenu/AccountsReceivable"
+import AccountsPayable from "./components/ServicesMenu/AccountsPayable"
+import CreditControl from "./components/ServicesMenu/CreditControl"
+import FinancialAssistant from "./components/ServicesMenu/FinancialAssistant"
 import Footer from "./components/footer/Footer"
+import WhoWeAre from "./components/aboutMenu/WhoWeAre"
+import MenuOurTeam from "./components/aboutMenu/MenuOurTeam"
+
+import "./App.css"
 import "./Responsive.css"
-import Header from "./components/header/Header"
+import Piricing from "./components/pircing/Piricing"
 
 function App() {
-  const [className, setclassName] = useState("column-move col-5")
-  const scrollWindow = () => {
-    if (
-      (window.scrollY > 10 && window.scrollY < 300) ||
-      (window.scrollY > 800 && window.scrollY < 1200) ||
-      (window.scrollY > 1600 && window.scrollY < 1900) ||
-      (window.scrollY > 2600 && window.scrollY < 3000) ||
-      (window.scrollY > 3400 && window.scrollY < 3800)
-    ) {
-      setclassName("column-hover-move col-5")
-    } else {
-      setclassName("column-move col-5")
-    }
-  }
-
-  window.addEventListener("scroll", scrollWindow)
-
   return (
     <Router>
-      <MyContext.Provider value={{className, setclassName}}>
-        <div className="scroll-move">
-          <Navbar />
-          <Header />
-          <Services />
-          <Home />
-          <About />
-          <OurTeam />
-          <Contact />
-          <Footer />
-        </div>
-      </MyContext.Provider>
-      <Switch>
-        <Route></Route>
-      </Switch>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Route exact path="/services-virtual-receptionist">
+            <VirtualReceptionist />
+          </Route>
+          <Route exact path="/personal-assistent">
+            <PersonalAssistant />
+          </Route>
+          <Route exact path="/administrativ-assistent">
+            <AdministrativeAssistant />
+          </Route>
+          <Route exact path="/account-receivable">
+            <AccountsReceivable />
+          </Route>
+          <Route exact path="/account-payable">
+            <AccountsPayable />
+          </Route>
+          <Route exact path="/credit-control">
+            <CreditControl />
+          </Route>
+          <Route exact path="/financial-assistent">
+            <FinancialAssistant />
+          </Route>
+          <Route exact path="/who-we-are">
+            <WhoWeAre />
+          </Route>
+          <Route exact path="/our-team">
+            <MenuOurTeam />
+          </Route>
+          <Route exact path="/pricing">
+            <Piricing/>
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
     </Router>
   )
 }

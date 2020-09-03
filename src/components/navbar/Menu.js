@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, {useRef, useLayoutEffect} from "react"
 import {Link} from "react-router-dom"
 import ServicesLoyeOut from "./ServicesLoyeOut"
 import AdministrativLoyeOut from "./AdministrativLoyeOut"
@@ -10,6 +10,7 @@ function Menu() {
   const alertAdminRef = useRef()
   const alertFinancRef = useRef()
   const alertAboutRef = useRef()
+  const callServicesRef = useRef()
 
   const clickServices = () => {
     alerServicetRef.current.classList.toggle("menu-alert-service")
@@ -31,25 +32,45 @@ function Menu() {
     alertAdminRef.current.classList.remove("menu-alert-admin-service")
     alertFinancRef.current.classList.remove("menu-alert-financ-service")
   }
+
+  useLayoutEffect(() => {
+    const removeMenuSection = (event) => {
+      if (
+        alertAdminRef.current.contains(event.target) ||
+        alertFinancRef.current.contains(event.target) ||
+        alertAboutRef.current.contains(event.target) ||
+        callServicesRef.current.contains(event.target)
+      ) {
+        alertFinancRef.current.classList.remove("menu-alert-financ-service")
+        alerServicetRef.current.classList.remove("menu-alert-service")
+        alertAdminRef.current.classList.remove("menu-alert-admin-service")
+        alertAboutRef.current.classList.remove("menu-alert-about")
+      }
+    }
+
+    document.addEventListener("click", removeMenuSection)
+    return () => {
+      document.removeEventListener("click", removeMenuSection)
+    }
+  }, [])
+
   return (
     <div className="nav-div">
       <ul className="nav">
         <li>
-          <Link className="nav-link" to={"/"}>
+          <a className="nav-link" href="/#header">
             Home
-          </Link>
+          </a>
         </li>
         <li>
-          {" "}
-          <Link className="nav-link" to={"/services"}>
+          <div className="nav-link" onClick={clickServices}>
             Services <span onClick={clickServices}>⌵</span>
-          </Link>
+          </div>
         </li>
         <li>
-          {" "}
-          <Link className="nav-link" to={"/about"}>
+          <div className="nav-link" onClick={clickAbout}>
             About us <span onClick={clickAbout}>⌵</span>
-          </Link>
+          </div>
         </li>
         <li>
           {" "}
@@ -58,15 +79,18 @@ function Menu() {
           </Link>
         </li>
         <li>
-          {" "}
-          <Link className="nav-link" to={"/contact"}>
+          <a className="nav-link" href="/#contact">
             Contact
-          </Link>
+          </a>
         </li>
       </ul>
       <div className="alert-menu">
         <div ref={alerServicetRef} style={{display: "none"}}>
-          <ServicesLoyeOut clickAdmin={clickAdmin} clickFinanc={clickFinance} />
+          <ServicesLoyeOut
+            callServicesRef={callServicesRef}
+            clickAdmin={clickAdmin}
+            clickFinanc={clickFinance}
+          />
         </div>
         <div ref={alertAdminRef} style={{display: "none"}}>
           <AdministrativLoyeOut />

@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import {Link} from "react-router-dom"
 
 function MembersBox(props) {
   const [context, setcontext] = useState(props.name)
@@ -37,13 +36,13 @@ function MembersBox(props) {
       <div className="team-infobox">
         <h3>
           {context.length < 15 ? (
-            <Link to="/" className={className} id={idHover}>
+            <a href="/#header" className={className} id={idHover}>
               {context}
-            </Link>
+            </a>
           ) : (
-            <Link to="/" id="position-hover">
+            <a href="/#header" id="position-hover">
               {context}
-            </Link>
+            </a>
           )}
         </h3>
       </div>

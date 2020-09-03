@@ -11,6 +11,7 @@ function OurTeam() {
           context="A perfect blend of knowledge, experience and passion. 
 The best people formula for the best administrative and financial assistance!"
           link="VIEW ALL"
+          to="/our-team"
           classNameParagraf="about-paragraf"
         />
       </div>

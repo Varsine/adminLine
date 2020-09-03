@@ -1,28 +1,27 @@
 import React from "react"
-import {Link} from "react-router-dom"
 
-function ServicesLoyeOut(props) {
+function ServicesLoyeOut({clickAdmin, clickFinanc, callServicesRef}) {
   return (
     <div>
       <div className="row">
-        <Link className="nav-link" to={"/"}>
+        <div className="nav-link" onClick={clickAdmin}>
           Administrative services{" "}
-          <span onClick={props.clickAdmin}>
+          <span onClick={clickAdmin}>
             <i className="fas fa-angle-right"></i>
           </span>
-        </Link>
+        </div>
       </div>
       <div className="row">
-        <Link className="nav-link" to={"/"}>
+        <div className="nav-link" onClick={clickFinanc}>
           Financial services{" "}
-          <span onClick={props.clickFinanc}>
+          <span onClick={clickFinanc}>
             <i className="fas fa-angle-right"></i>
           </span>
-        </Link>
+        </div>
       </div>
-      <Link className="nav-link" to={"/"}>
+      <a href="/#services" ref={callServicesRef} className="nav-link">
         Call center services
-      </Link>
+      </a>
     </div>
   )
 }

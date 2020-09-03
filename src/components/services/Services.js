@@ -7,12 +7,10 @@ import {MyContext} from "../../context/Context"
 function Services() {
   const {className} = useContext(MyContext)
   return (
-    <div className=" services row">
+    <div className=" services row" id="services">
       <div id="services-content" className={className}>
         <div style={{padding: "5% 2%"}}>
-          <h2>
-            RECEPTIONIST, BOOKKEEPING AND CALL CENTER SERVICES
-          </h2>
+          <h2>RECEPTIONIST, BOOKKEEPING AND CALL CENTER SERVICES</h2>
           <p>
             Being a business owner is not an easy task. Very often not being
             ready to employ in-house staff due to high employment costs you try

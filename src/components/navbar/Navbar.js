@@ -1,5 +1,4 @@
 import React, {useRef} from "react"
-import {Link} from "react-router-dom"
 import logo from "../../image/logo.png"
 import ContaxtBox from "./ContaxtBox"
 import Menu from "./Menu"
@@ -26,15 +25,15 @@ const Navabar = () => {
     <div className="navbar-parent">
       <div className="col-12 row nav-bar" ref={navBarRef}>
         <div>
-          <Link to="/" className="row hidden-menu" onClick={clickMenu}>
+          <div className="row hidden-menu" onClick={clickMenu}>
             <i className="fas fa-align-justify"></i>
-          </Link>
+          </div>
         </div>
 
-        <div className="col-3 row logo">
-          <Link to={"/"}>
+        <div className="col-3 row logo" href="/#header">
+          <a  href="/#header">
             <img src={logo} alt="Admin-logo" />
-          </Link>
+          </a>
         </div>
         <div style={{display: "none"}} ref={mobileMenu}>
           <Menu />

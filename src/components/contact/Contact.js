@@ -4,7 +4,7 @@ import ContactInputBox from "./ContactInputBox"
 import Map from "./Map"
 function Contact() {
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact">
       <div className="contact-header row">
         <div>
           <p>Ready to discuss your business?</p>

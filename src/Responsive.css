@@ -1,3 +1,70 @@
+@media only screen and (min-width: 2200px) {
+  .start-page #start-page-content::before {
+    top: 350px !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .logo {
+    width: 450px !important;
+  }
+  .logo img {
+    margin-left: 90px;
+  }
+  .menu-list {
+    width: inherit !important;
+  }
+  .menu-alert-service {
+    left: 400px;
+    width: 275px;
+  }
+  .menu-alert-financ-service,
+  .menu-list .menu-alert-admin-service {
+    left: 675px;
+    width: 275px;
+  }
+  .menu-alert-about {
+    left: 600px;
+    width: 130px;
+  }
+  .contact-box {
+    width: 332px !important;
+  }
+  .start-page {
+    padding: 0;
+  }
+  .services {
+    padding-bottom: 80px !important;
+  }
+  #services-content {
+    margin-top: 0 !important;
+  }
+  .home-page {
+    padding-bottom: 80px !important;
+  }
+  .our-about {
+    margin: 0 !important;
+  }
+  .members-box {
+    height: 250px !important;
+  }
+  .team-thumb {
+    height: 200px !important;
+  }
+  .footer-menu .nav-div {
+    display: flex;
+    justify-content: center;
+  }
+  #start-page-content::before {
+    top: 320px !important;
+  }
+}
+@media only screen and (min-width: 1770px) {
+  .about-right-column img {
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+  }
+}
 @media only screen and (max-width: 1280px) {
   .nav-bar {
     height: 60px !important;
@@ -47,6 +114,9 @@
 }
 
 @media only screen and (max-width: 1164px) {
+  .start-page .column-move::before {
+    height: 0 !important;
+  }
   .phone-box {
     margin-left: 0%;
   }
@@ -224,16 +294,16 @@
     width: 60% !important;
     justify-content: center !important;
   }
-  .input-box input {
-    width: 84% !important;
-  }
+
   .input-box-form textarea {
     width: 100%;
   }
   .service-box-path h1 {
     font-size: 100% !important;
   }
-
+  .our-about {
+    width: 100%;
+  }
   .our-team {
     position: static;
     width: 56%;
@@ -277,18 +347,12 @@
     margin-top: 4%;
     height: 400px !important;
   }
-  .input-box input {
-    width: 75%;
-  }
 }
 @media only screen and (max-width: 1010px) {
   .our-team {
     position: static;
     width: 80%;
     margin-left: 10%;
-  }
-  .input-box input {
-    width: 81% !important;
   }
 }
 @media only screen and (max-width: 970px) {
@@ -301,9 +365,6 @@
   #home-page-content ul li {
     line-height: 23px;
     margin-left: 50px;
-  }
-  .input-box input {
-    width: 78% !important;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -318,18 +379,17 @@
     display: flex;
     justify-content: center !important;
   }
-  .input-box input {
-    width: 75% !important;
-  }
+
   .nav-bar {
     padding: 1% 0 !important;
   }
   .start-page {
-    padding-top: 40px;
+    padding: 0px;
+    margin-top: 116px !important;
   }
   #start-page-content h2 {
     font-size: 22px !important;
-    line-height: 30px !important;
+    line-height: 10px !important;
   }
   #start-page-content h3 {
     line-height: 24px;
@@ -356,10 +416,6 @@
   .contact-link {
     line-height: 2px;
   }
-  .start-page {
-    margin-top: 120px;
-  }
-
   .menu-list-blok {
     display: block !important;
     background-color: #7497b1;
@@ -368,7 +424,9 @@
     height: 116px !important;
     padding: 0 !important;
   }
-
+  .our-about {
+    margin: 0 !important;
+  }
   .logo img {
     width: 185px !important;
     margin-left: -25%;
@@ -383,10 +441,10 @@
     position: absolute;
     width: 100% !important;
   }
-  .menu-list-blok .nav {
-    margin-top: -25px !important;
-    margin-left: -0px;
+  .menu-list-blok {
+    margin-top: -40px;
   }
+ 
   .menu-list-blok .nav-link {
     display: block;
     width: 100%;
@@ -443,7 +501,7 @@
     width: 200px !important;
     justify-content: start !important;
     margin-left: 30px !important;
-    margin-top: -97px !important;
+    margin-top: -50px !important;
     animation: changeTopMobileMenu 2s alternate !important;
   }
   .menu-list-blok .menu-alert-service .nav-link {
@@ -463,7 +521,7 @@
     position: absolute !important;
     width: 100px;
     margin-left: 40px !important;
-    margin-top: -80px !important;
+    margin-top: -20px !important;
     animation: changeTopMobileMenu 2s alternate !important;
   }
   @keyframes changeTopMobileMenu {
@@ -490,7 +548,20 @@
   .nav-bar {
     flex-wrap: wrap;
   }
-
+  .services {
+    margin-top: 75px !important;
+    padding-bottom: 80px !important;
+  }
+  #services-content {
+    margin-top: 0 !important;
+  }
+  .home-page {
+    margin-top: 50px;
+    padding-bottom: 80px !important;
+  }
+  .about-us {
+    margin-bottom: 100px;
+  }
   .home-page-boxes {
     min-width: 100% !important;
     margin: 0 !important;
@@ -506,9 +577,7 @@
   .about-right-column {
     display: none;
   }
-  .input-box input {
-    width: 55%;
-  }
+
   .team-infobox h3 {
     font-size: 13px;
   }
@@ -523,20 +592,12 @@
   .member-box-path > div {
     width: 300px !important;
   }
-
-  .contact-header > div p {
-    font-size: 70% !important;
-  }
   .contact-header {
     font-size: 32px !important;
     line-height: 1.5;
   }
 }
-@media only screen and (max-width: 640px) {
-  .input-box input {
-    width: 70% !important;
-  }
-}
+
 @media only screen and (max-width: 600px) {
   .team-thumb {
     width: 100%;
@@ -552,11 +613,7 @@
     line-height: 12px;
   }
 }
-@media only screen and (max-width: 540px) {
-  .input-box input {
-    width: 65% !important;
-  }
-}
+
 @media only screen and (max-width: 480px) {
   .start-page {
     margin-top: 100px !important;
@@ -584,7 +641,7 @@
     line-height: 20px;
   }
   .input-div input {
-    width: 83% !important;
+    width: 100% !important;
     min-width: 30%;
   }
   .input-div {
@@ -594,8 +651,6 @@
   .input-box-form > div {
     flex-wrap: wrap !important;
   }
-.menu-list-blok{
-margin-top: -40px;}
   .menu-list-blok .nav-link {
     font-size: 13px !important;
   }

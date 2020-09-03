@@ -1,16 +1,23 @@
 import React from "react"
 import {Link} from "react-router-dom"
 
-export default function ServicesBox(props) {
+export default function ServicesBox({
+  parentClassName,
+  className,
+  path,
+  src,
+  content,
+  paragraf,
+}) {
   return (
-    <div className={props.parentClassName}>
-      <Link to={props.path} className="service-box-link">
-        <div className={props.className}>
+    <div className={parentClassName}>
+      <Link to={path} className="service-box-link" >
+        <div className={className}>
           <div>
-            <img src={props.src} alt="" />
+            <img src={src} alt="" />
           </div>
-          <h3>{props.content}</h3>
-          <p>{props.paragraf}</p>
+          <h3>{content}</h3>
+          <p>{paragraf}</p>
         </div>
       </Link>
     </div>

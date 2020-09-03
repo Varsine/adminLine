@@ -11,21 +11,21 @@ export default function AdministrativeServices() {
       <div>
         <ServicesBox
           parentClassName="col-4"
-          path="/services/receptionist"
+          path="/services-virtual-receptionist"
           className="services-box"
           src={icon1}
           content="RECEPTIONIST"
         />
         <ServicesBox
           parentClassName="col-4"
-          path="/services/personal-assistant"
+          path="/personal-assistent"
           className="services-box"
           src={icon2}
           content="PERSONAL ASSISTANT"
         />
         <ServicesBox
           parentClassName="col-4"
-          path="/services/administrative-assistant"
+          path="/administrativ-assistent"
           className="services-box"
           src={icon3}
           content="ADMINISTRATIV ASSISTENT"

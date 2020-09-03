@@ -1,0 +1,138 @@
+.pricing {
+  margin-top: 100px;
+}
+.pricing h1 {
+  padding-top: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+.pricing h2 {
+  padding-bottom: 65px;
+  font-size: 31.5px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.pricing h2 span {
+  text-decoration: underline;
+  text-decoration-color: #7d0909;
+}
+.pricing-table {
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80%;
+}
+.pricing-table h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7d0909;
+  margin-bottom: 10px;
+  margin-left: 32%;
+}
+
+tr div {
+  display: flex;
+}
+th {
+  height: 30px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  color: #000;
+}
+
+td {
+  width: 20%;
+  padding: 5px;
+  color: #000;
+}
+th:nth-child(odd) {
+  background-color: #7497b1;
+}
+th:nth-child(even) {
+  background-color: #ccc;
+}
+th:first-child,
+th:first-child + th {
+  background: none;
+}
+td {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+tr:last-child > div > td:first-child {
+  text-align: left;
+}
+tbody tr > div:first-child td,
+tbody tr > div:nth-child(5) td,
+tbody tr > div:nth-child(10) td {
+  background: #c2e2ec;
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: center !important;
+}
+tbody tr > div:nth-child(5) td,
+tbody tr > div:nth-child(10) td {
+  margin-top: 50px;
+}
+.pricing-content {
+  width: 100%;
+  max-width: 810px;
+  display: block;
+  margin: 0 auto;
+  padding: 35px 0 0 0;
+  color: #444343;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pricing-content h1 {
+  font-size: 25px;
+}
+.pricing-content div {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 140px;
+  padding-bottom: 30px;
+}
+.pricing-content > div > a {
+  background: #7d0909;
+  color: #fff !important;
+  font-size: 24px !important;
+  padding: 5px;
+  text-align: center;
+  width: 166px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 960px) {
+  th {
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  tr:last-child > div > td:first-child {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  tr:last-child > div > td:first-child {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  tr:last-child > div > td:first-child {
+    font-size: 10px;
+  }
+}
