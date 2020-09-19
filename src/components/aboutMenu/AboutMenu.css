@@ -1,6 +1,6 @@
 .we-are {
   font-family: Lato;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .we-are-header-bg {
@@ -77,12 +77,14 @@
 }
 
 /*<<<<<<<<<<< Our team>>>>>>>>>>*/
+
 .menu-our-team {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 .menu-our-team h1 {
+  padding: 80px 0;
+
   text-align: center;
-  margin: 153px 0 90px;
   color: #7d0909;
   font-size: 32px;
   text-transform: inherit;
@@ -155,7 +157,7 @@
     width: 31%;
   }
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 766px) {
   .flip-card,
   .flip-card:hover {
     width: 46%;
@@ -163,6 +165,10 @@
   }
   .out-team-flip-card {
     justify-content: center;
+  }
+  .menu-our-team,
+  .we-are {
+    margin-top: 100px;
   }
 }
 @media only screen and (max-width: 500px) {

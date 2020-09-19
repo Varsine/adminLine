@@ -1,0 +1,73 @@
+.not-found img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: -102.5px;
+  filter: blur(3px);
+}
+.not-found div {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  text-align: center;
+  z-index: 5;
+}
+.not-found div:hover {
+  filter: blur(2px);
+}
+.not-found div:hover ~ img {
+  filter: blur(0);
+}
+.not-found div h1 {
+  color: red;
+  font-size: 150px;
+  line-height: 20px;
+}
+.not-found div p {
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
+  color: rgb(85, 80, 80);
+  font-weight: 700;
+}
+.not-found div p span {
+  color: rgb(202, 20, 51);
+}
+
+@media (max-width: 1000px) {
+  .not-found div {
+    top: 25%;
+  }
+  .not-found div h1 {
+    font-size: 400%;
+  }
+}
+
+@media (max-width: 766px) {
+  .not-found img {
+    top: 105px;
+    margin-bottom: 0;
+  }
+  .not-found div {
+    left: 30%;
+    top: 35%;
+  }
+  .not-found div p {
+    font-size: 20px;
+  }
+  .not-found div h1 {
+    font-size: 200%;
+  }
+}
+@media (max-width: 400px) {
+  .not-found div {
+    left: 15%;
+    top: 25%;
+  }
+  .not-found div p {
+    font-size: 16px;
+  }
+  .not-found div h1 {
+    font-size: 100%;
+  }
+}

@@ -6,7 +6,6 @@ import Menu from "./Menu"
 const Navabar = () => {
   const menuref = useRef()
   const navBarRef = useRef()
-  const mobileMenu = useRef()
 
   const clickMenu = () => {
     if (window.screen.availWidth > 767) {
@@ -17,7 +16,6 @@ const Navabar = () => {
       navBarRef.current.classList.toggle("larg-nav-bar")
       menuref.current.classList.remove("nav-bottom-menu")
       menuref.current.classList.toggle("menu-list-blok")
-      mobileMenu.current.classList.toggle("mobile-nav-bar")
     }
   }
 
@@ -31,12 +29,9 @@ const Navabar = () => {
         </div>
 
         <div className="col-3 row logo" href="/#header">
-          <a  href="/#header">
+          <a href="/#header">
             <img src={logo} alt="Admin-logo" />
           </a>
-        </div>
-        <div style={{display: "none"}} ref={mobileMenu}>
-          <Menu />
         </div>
         <div className="col-6 menu-list">
           <Menu />
@@ -44,7 +39,7 @@ const Navabar = () => {
         <ContaxtBox />
       </div>
       <div style={{display: "none"}} ref={menuref}>
-        <Menu />
+        <Menu menuref={menuref} navBarRef={navBarRef} />
       </div>
     </div>
   )

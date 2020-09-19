@@ -15,7 +15,7 @@ export default function ContaxtBox() {
         </a>
       </div>
       <div className="mail-box">
-        <a className="contact-link">
+        <a href="/" className="contact-link">
           <i className="fa fa-envelope"></i>
           <p>info@adminline.co.uk</p>
         </a>

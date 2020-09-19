@@ -1,5 +1,8 @@
+.services-menu-parent {
+  padding-top: 50px;
+  margin: 60px 0;
+}
 .services-menu-page {
-  margin: 115px 0;
   background-color: #ededef;
   display: flex;
 }
@@ -46,24 +49,15 @@
   list-style: none;
   font-size: 16px;
   color: #333;
-  margin-left: 33px;
   display: list-item;
   line-height: 1.4;
 }
 .services-menu-page-left-path ul li::before {
   content: "\f00c";
   font-family: FontAwesome;
-  position: absolute;
   padding: 5px 10px;
-  left: 70px;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 15px;
-  width: 20px;
-  height: 20px;
   font-size: 12px;
   color: #7d0909;
-  z-index: 1;
 }
 .services-menu-page-right-path {
   width: 35%;
@@ -74,4 +68,39 @@
   margin-top: -45px;
   margin-left: 20%;
   margin-right: 30px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .services-menu-page-right-path img {
+    margin-top: -55px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .services-menu-page {
+    flex-wrap: wrap-reverse;
+  }
+
+  .services-menu-page-left-path {
+    width: 100%;
+  }
+  .services-menu-page-right-path {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .services-menu-page-right-path img {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .services-menu-page-right-path img {
+    margin-top: 0;
+  }
+  .services-menu-page-left-path ul li {
+    margin-left: -4%;
+  }
+  .services-menu-parent {
+    margin: 100px 0;
+    padding: 0;
+  }
 }

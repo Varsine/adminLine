@@ -5,12 +5,13 @@ import AdministrativLoyeOut from "./AdministrativLoyeOut"
 import FinancialLoyeOut from "./FinancialLoyeOut"
 import AboutLoyeout from "./AboutLoyeout"
 
-function Menu() {
+function Menu({menuref, navBarRef}) {
   const alerServicetRef = useRef()
   const alertAdminRef = useRef()
   const alertFinancRef = useRef()
   const alertAboutRef = useRef()
   const callServicesRef = useRef()
+  const pricingRef = useRef()
 
   const clickServices = () => {
     alerServicetRef.current.classList.toggle("menu-alert-service")
@@ -39,12 +40,18 @@ function Menu() {
         alertAdminRef.current.contains(event.target) ||
         alertFinancRef.current.contains(event.target) ||
         alertAboutRef.current.contains(event.target) ||
-        callServicesRef.current.contains(event.target)
+        callServicesRef.current.contains(event.target) ||
+        pricingRef.current.contains(event.target)
       ) {
         alertFinancRef.current.classList.remove("menu-alert-financ-service")
         alerServicetRef.current.classList.remove("menu-alert-service")
         alertAdminRef.current.classList.remove("menu-alert-admin-service")
         alertAboutRef.current.classList.remove("menu-alert-about")
+        if (menuref) {
+          menuref.current.classList.remove("nav-bottom-menu")
+          menuref.current.classList.remove("menu-list-blok")
+          navBarRef.current.classList.remove("larg-nav-bar")
+        }
       }
     }
 
@@ -52,7 +59,7 @@ function Menu() {
     return () => {
       document.removeEventListener("click", removeMenuSection)
     }
-  }, [])
+  })
 
   return (
     <div className="nav-div">
@@ -64,17 +71,17 @@ function Menu() {
         </li>
         <li>
           <div className="nav-link" onClick={clickServices}>
-            Services <span onClick={clickServices}>⌵</span>
+            Services <span>⌵</span>
           </div>
         </li>
         <li>
           <div className="nav-link" onClick={clickAbout}>
-            About us <span onClick={clickAbout}>⌵</span>
+            About us <span>⌵</span>
           </div>
         </li>
         <li>
           {" "}
-          <Link className="nav-link" to={"/pricing"}>
+          <Link className="nav-link" to={"/pricing"} ref={pricingRef}>
             Pricing
           </Link>
         </li>

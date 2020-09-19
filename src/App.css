@@ -164,11 +164,11 @@ html {
 .menu-list .menu-alert-about,
 .menu-list .menu-alert-service,
 .menu-list .menu-alert-admin-service {
-  animation: changeTop 1s alternate;
+  animation: changeTop 1s alternate linear;
 }
 
 .menu-list .menu-alert-financ-service {
-  animation: changeTopService 1s alternate;
+  animation: changeTopService 1s alternate linear;
 }
 @keyframes changeTopService {
   from {

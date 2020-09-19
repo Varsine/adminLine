@@ -21,7 +21,6 @@ const PricingTable = () => {
           </tr>
         </thead>
         <tbody>
-          {" "}
           <tr>
             {pricingDataTbody.map((value, ind) => {
               return (

@@ -69,6 +69,11 @@
   .nav-bar {
     height: 60px !important;
   }
+  .menu-list .menu-alert-about,
+  .menu-list .menu-alert-service,
+  .menu-list .menu-alert-admin-service {
+    top: 60px;
+  }
   .nav {
     width: 82%;
   }
@@ -151,6 +156,7 @@
     position: absolute;
     left: 3%;
   }
+
   .nav-bottom-menu .nav {
     justify-content: flex-start;
     padding: 0;
@@ -444,7 +450,7 @@
   .menu-list-blok {
     margin-top: -40px;
   }
- 
+
   .menu-list-blok .nav-link {
     display: block;
     width: 100%;

@@ -14,10 +14,11 @@ import FinancialAssistant from "./components/ServicesMenu/FinancialAssistant"
 import Footer from "./components/footer/Footer"
 import WhoWeAre from "./components/aboutMenu/WhoWeAre"
 import MenuOurTeam from "./components/aboutMenu/MenuOurTeam"
+import Piricing from "./components/pircing/Piricing"
+import NotFound from "./components/notFound/NotFound"
 
 import "./App.css"
 import "./Responsive.css"
-import Piricing from "./components/pircing/Piricing"
 
 function App() {
   return (
@@ -56,7 +57,10 @@ function App() {
             <MenuOurTeam />
           </Route>
           <Route exact path="/pricing">
-            <Piricing/>
+            <Piricing />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
         <Footer />

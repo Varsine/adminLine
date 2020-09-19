@@ -6,7 +6,7 @@ function ServicesLoyeOut({clickAdmin, clickFinanc, callServicesRef}) {
       <div className="row">
         <div className="nav-link" onClick={clickAdmin}>
           Administrative services{" "}
-          <span onClick={clickAdmin}>
+          <span>
             <i className="fas fa-angle-right"></i>
           </span>
         </div>
@@ -14,7 +14,7 @@ function ServicesLoyeOut({clickAdmin, clickFinanc, callServicesRef}) {
       <div className="row">
         <div className="nav-link" onClick={clickFinanc}>
           Financial services{" "}
-          <span onClick={clickFinanc}>
+          <span>
             <i className="fas fa-angle-right"></i>
           </span>
         </div>
