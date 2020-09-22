@@ -65,9 +65,9 @@ function Menu({menuref, navBarRef}) {
     <div className="nav-div">
       <ul className="nav">
         <li>
-          <a className="nav-link" href="/#header">
+          <Link className="nav-link" to="/">
             Home
-          </a>
+          </Link>
         </li>
         <li>
           <div className="nav-link" onClick={clickServices}>
@@ -86,9 +86,9 @@ function Menu({menuref, navBarRef}) {
           </Link>
         </li>
         <li>
-          <a className="nav-link" href="/#contact">
+          <Link className="nav-link" href="/#contact">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="alert-menu">
