@@ -1,4 +1,4 @@
-import React, {useRef, useLayoutEffect} from "react"
+import React, {useState, useRef, useLayoutEffect} from "react"
 import {Link} from "react-router-dom"
 import ServicesLoyeOut from "./ServicesLoyeOut"
 import AdministrativLoyeOut from "./AdministrativLoyeOut"
@@ -12,6 +12,16 @@ function Menu({menuref, navBarRef}) {
   const alertAboutRef = useRef()
   const callServicesRef = useRef()
   const pricingRef = useRef()
+  const [contactHref, setContactHref] = useState("/adminLine/#contact")
+
+  const clickContact = (e) => {
+    e.preventDefault()
+    // window.location.pathname = "/adminLine"
+    if (window.location.pathname !== "/adminLine") {
+      setContactHref("/adminLine/#contact")
+    }
+    console.log("hello")
+  }
 
   const clickServices = () => {
     alerServicetRef.current.classList.toggle("menu-alert-service")
@@ -86,9 +96,9 @@ function Menu({menuref, navBarRef}) {
           </Link>
         </li>
         <li>
-          <Link className="nav-link" to="adminLine/contact">
+          <a className="nav-link" href="/adminLine/#contact">
             Contact
-          </Link>
+          </a>
         </li>
       </ul>
       <div className="alert-menu">

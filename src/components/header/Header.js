@@ -5,7 +5,7 @@ export default function Header() {
   const {className} = useContext(MyContext)
 
   return (
-    <div className="col-12 row start-page" title="/adminLine" id="header">
+    <div className="col-12 row start-page" id="header">
       <div id="start-page-content" className={className}>
         <div style={{padding: "5% 2%", marginTop: "3%"}}>
           <h2>You do your business. </h2>

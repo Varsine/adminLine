@@ -1,5 +1,4 @@
 import React from "react"
-import {Link} from "react-router-dom"
 
 function ServicesLoyeOut({clickAdmin, clickFinanc, callServicesRef}) {
   return (
@@ -20,9 +19,9 @@ function ServicesLoyeOut({clickAdmin, clickFinanc, callServicesRef}) {
           </span>
         </div>
       </div>
-      <Link to="/adminLine/services" ref={callServicesRef} className="nav-link">
+      <a href="/adminLine/#services" ref={callServicesRef} className="nav-link">
         Call center services
-      </Link>
+      </a>
     </div>
   )
 }

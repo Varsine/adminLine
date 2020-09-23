@@ -2,6 +2,7 @@ import React, {useRef} from "react"
 import logo from "../../image/logo.png"
 import ContaxtBox from "./ContaxtBox"
 import Menu from "./Menu"
+import { Link } from "react-router-dom"
 
 const Navabar = () => {
   const menuref = useRef()
@@ -28,10 +29,10 @@ const Navabar = () => {
           </div>
         </div>
 
-        <div className="col-3 row logo" href="/#header">
-          <a href="/#header">
+        <div className="col-3 row logo" >
+          <Link to="/adminLine">
             <img src={logo} alt="Admin-logo" />
-          </a>
+          </Link>
         </div>
         <div className="col-6 menu-list">
           <Menu />

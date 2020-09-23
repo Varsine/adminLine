@@ -1,5 +1,4 @@
 import React from "react"
-import {Link} from "react-router-dom"
 
 import PricingTable from "./PricingTable"
 
@@ -22,7 +21,7 @@ const Piricing = () => {
           pricing and more information!
         </h3>
         <div>
-          <Link to="/adminLine/contact">Contact us</Link>
+          <a href="/adminLine/#contact">Contact us</a>
         </div>
       </div>
     </div>
