@@ -81,12 +81,12 @@ function Menu({menuref, navBarRef}) {
         </li>
         <li>
           {" "}
-          <Link className="nav-link" to={"/pricing"} ref={pricingRef}>
+          <Link className="nav-link" to="/pricing" ref={pricingRef}>
             Pricing
           </Link>
         </li>
         <li>
-          <Link className="nav-link" href="/#contact">
+          <Link className="nav-link" to="/#contact">
             Contact
           </Link>
         </li>
