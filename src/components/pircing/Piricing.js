@@ -1,4 +1,6 @@
 import React from "react"
+import {Link} from "react-router-dom"
+
 import PricingTable from "./PricingTable"
 
 import "./Piricing.css"
@@ -20,7 +22,7 @@ const Piricing = () => {
           pricing and more information!
         </h3>
         <div>
-          <a href="/#contact">Contact us</a>
+          <Link to="/adminLine/contact">Contact us</Link>
         </div>
       </div>
     </div>

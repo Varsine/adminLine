@@ -26,37 +26,37 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/adminLine">
             <MainPage />
           </Route>
-          <Route exact path="/services-virtual-receptionist">
+          <Route exact path="/adminLine/services-virtual-receptionist">
             <VirtualReceptionist />
           </Route>
-          <Route exact path="/personal-assistent">
+          <Route exact path="/adminLine/personal-assistent">
             <PersonalAssistant />
           </Route>
-          <Route exact path="/administrativ-assistent">
+          <Route exact path="/adminLine/administrativ-assistent">
             <AdministrativeAssistant />
           </Route>
-          <Route exact path="/account-receivable">
+          <Route exact path="/adminLine/account-receivable">
             <AccountsReceivable />
           </Route>
-          <Route exact path="/account-payable">
+          <Route exact path="/adminLine/account-payable">
             <AccountsPayable />
           </Route>
-          <Route exact path="/credit-control">
+          <Route exact path="/adminLine/credit-control">
             <CreditControl />
           </Route>
-          <Route exact path="/financial-assistent">
+          <Route exact path="/adminLine/financial-assistent">
             <FinancialAssistant />
           </Route>
-          <Route exact path="/who-we-are">
+          <Route exact path="/adminLine/who-we-are">
             <WhoWeAre />
           </Route>
-          <Route exact path="/our-team">
+          <Route exact path="/adminLine/our-team">
             <MenuOurTeam />
           </Route>
-          <Route exact path="/pricing">
+          <Route exact path="/adminLine/pricing">
             <Piricing />
           </Route>
           <Route path="*">

@@ -65,7 +65,7 @@ function Menu({menuref, navBarRef}) {
     <div className="nav-div">
       <ul className="nav">
         <li>
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/adminLine">
             Home
           </Link>
         </li>
@@ -81,12 +81,12 @@ function Menu({menuref, navBarRef}) {
         </li>
         <li>
           {" "}
-          <Link className="nav-link" to="/pricing" ref={pricingRef}>
+          <Link className="nav-link" to="/adminLine/pricing" ref={pricingRef}>
             Pricing
           </Link>
         </li>
         <li>
-          <Link className="nav-link" to="/#contact">
+          <Link className="nav-link" to="adminLine/contact">
             Contact
           </Link>
         </li>

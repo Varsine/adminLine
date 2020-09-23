@@ -6,15 +6,18 @@ function AdministrativLoyeOut() {
     <div>
       <Link
         className="nav-link nav-link-larg"
-        to={"/services-virtual-receptionist"}
+        to={"/adminLine/services-virtual-receptionist"}
       >
         Virtual Receptionist
         <br /> service
       </Link>
-      <Link className="nav-link" to="/personal-assistent">
+      <Link className="nav-link" to="/adminLine/personal-assistent">
         Personal assistant
       </Link>
-      <Link className="nav-link nav-link-larg" to="/administrativ-assistent">
+      <Link
+        className="nav-link nav-link-larg"
+        to="/adminLine/administrativ-assistent"
+      >
         Administrative
         <br />
         assistant
